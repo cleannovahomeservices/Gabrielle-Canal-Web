@@ -1,0 +1,315 @@
+Hazlo sin emojis y también añádeme lo de formspree aqui esta el link 🌿 PROMPT PROFESIONAL PARA CREAR LA PÁGINA WEB
+ROL
+
+Actúa como diseñador/a web senior y desarrollador/a frontend con sensibilidad artística, experiencia en proyectos de bienestar, cuerpo, voz, espiritualidad contemporánea y estética editorial.
+
+OBJETIVO GENERAL
+
+Crear una página web personal y profesional para una artista y facilitadora que acompaña procesos de sanación, expresión y memoria a través del cuerpo, la respiración y la voz.
+
+La web debe sentirse:
+
+humana
+
+cálida
+
+sobria
+
+contemporánea
+
+con alma
+
+respirable
+
+no comercial ni agresiva
+
+Debe invitar a quedarse, leer y sentir.
+
+ESTILO VISUAL
+Inspiración
+
+Diseño editorial contemporáneo
+
+Webs artísticas y de bienestar consciente
+
+Mucho espacio en blanco
+
+Ritmo lento
+
+Jerarquía clara
+
+Paleta de colores (tonos tierra suaves)
+
+Blanco roto / marfil (base)
+
+Arena, arcilla y terracota clara (acentos cálidos)
+
+Verde oliva / salvia (acento vegetal)
+
+Gris perla o lavanda muy suave (acento lunar)
+
+Evitar:
+
+Negros puros
+
+Colores saturados
+
+Emojis
+
+Efectos llamativos o comerciales
+
+TIPOGRAFÍA
+
+Títulos: serif orgánica, elegante, suave (sensación editorial)
+
+Texto: sans serif limpia, muy legible
+
+Interlineado generoso
+
+Mucho aire entre bloques
+
+ESTRUCTURA DE ARCHIVOS (MUY IMPORTANTE)
+
+La web debe seguir esta estructura exacta:
+
+/ (raíz del proyecto)
+│
+├── index.html
+├── servicios.html
+├── como-te-acompano.html
+├── mi-musica.html
+├── mi-recorrido.html
+├── contacto.html
+│
+├── style.css
+├── app.js
+│
+└── images/              ← TODAS LAS IMÁGENES VAN AQUÍ
+    ├── logo.png
+    ├── image1.jpg
+    ├── image2.png
+    ├── image3.png
+    ├── image4.jpg
+    ├── image5.jpg
+    └── image6.jpg
+
+Uso correcto de imágenes en HTML
+
+Todas las imágenes deben llamarse así:
+
+<img src="images/image1.jpg" alt="">
+
+
+La carpeta debe llamarse exactamente images
+
+No usar rutas absolutas
+
+No cambiar nombres sin actualizar el HTML
+
+Compatible con GitHub Pages
+
+HEADER (COMÚN A TODAS LAS PÁGINAS)
+
+Logo pequeño integrado con la paleta
+
+Nombre: Gabrielle Canal
+
+Subtítulo: Yoga · Voz · Respiración
+
+Menú claro y simple
+
+Menú móvil tipo hamburguesa
+
+Estilo limpio y respirable
+
+PÁGINA INICIO
+Hero principal
+
+Imagen grande + texto:
+
+Título:
+
+Artista y facilitadora
+
+Texto completo:
+
+La respiración, la voz y el cuerpo son para mí lenguajes de sanación, expresión y memoria.
+Sostengo espacios para que descubras, practiques y desarrolles tus propias capacidades a través de las herramientas que me han funcionado para conocerme mejor y cultivar mi salud.
+Son tecnologías ancestrales que he practicado y no sólo me han funcionado sino que veo una y otra vez cómo facilitan y nutren la salud de muchas personas que participan en mis clases y retiros.
+No hay recetas universales, sino procesos vivos, respetuosos y encarnados.
+
+Botones:
+
+Cómo te acompaño
+
+Servicios
+
+Mi música
+
+PÁGINA: CÓMO TE ACOMPAÑO
+
+Título:
+
+CÓMO TE ACOMPAÑO
+
+Subtítulo:
+
+Mis espacios son lugares de co-creación
+
+Texto (NO resumir, NO cortar):
+
+Sostengo espacios para que descubras, practiques y desarrolles tus propias capacidades...
+(texto completo proporcionado por la usuaria)
+
+Usar:
+
+bloques largos
+
+acordeones
+
+citas destacadas
+
+animaciones suaves al hacer scroll
+
+PÁGINA SERVICIOS (VISTA GENERAL)
+
+Mostrar solo:
+
+Imagen
+
+Título
+
+Botón “Abrir”
+
+Servicios:
+
+Happy Period – Programa trimestral
+
+Clases semanales de kundalini yoga
+
+Talleres de voz terapéutica
+
+Retiros
+
+PÁGINAS INDIVIDUALES DE SERVICIO
+
+Cada servicio tiene:
+
+Hero con imagen
+
+Texto explicativo
+
+Acordeones
+
+Botón de contacto
+
+Happy Period
+
+Botón destacado:
+
+Descubrir Happy Period
+
+Enlace externo:
+
+http://happyperiod.gabriellecanal.com/
+
+PÁGINA: MI MÚSICA
+
+Texto:
+
+La música es parte esencial de mi camino.
+Como cantautora, utilizo la voz y la palabra para alumbrar, acompañar, acoger e inspirar.
+No es un servicio terapéutico, sino otro lenguaje desde el que comparto visión y sensibilidad.
+
+Botón principal:
+
+Ir a conocer mi música
+
+Enlace:
+
+https://linktr.ee/gabriellecanalmusic
+
+
+Imagen asociada.
+
+Este botón también debe aparecer en la página de Retiros.
+
+PÁGINA: MI RECORRIDO
+Recorrido personal
+
+Vengo de una experiencia muy concreta y corporal...
+(texto completo proporcionado por la usuaria)
+
+Mi propósito
+
+Contribuir a la creación del nuevo paradigma donde las personas recuerdan su capacidad innata de generar y cuidar salud integral —mental, emocional y física—, caminando hacia la soberanía personal y colectiva.
+
+Lista:
+
+se liberen de condicionamientos
+
+confíen en sí mismas y en sus dones
+
+recuerden para qué han venido
+
+habiten cuerpos y mentes más sanas y vivas
+
+Cierre destacado:
+
+No acompaño para cambiarte, sino para que recuerdes tu poder, tu capacidad propia.
+
+PÁGINA CONTACTO
+
+Formulario limpio y sobrio
+
+Conectado con Formspree
+
+Sin datos decorativos
+
+Confirmación por JavaScript sin recargar
+
+TECNOLOGÍA
+
+HTML semántico
+
+CSS moderno (variables, grid, flex, animaciones)
+
+JavaScript para:
+
+scroll reveal
+
+acordeones
+
+lightbox de imágenes
+
+menú móvil
+
+feedback del formulario
+
+Totalmente responsive
+
+Optimizado para GitHub Pages
+
+TONO FINAL
+
+La web debe transmitir:
+
+presencia
+
+escucha
+
+coherencia
+
+profundidad
+
+belleza sin artificio
+
+cuidado real
+
+Si quieres, en el siguiente mensaje puedo:
+
+Adaptar este prompt a Framer / Webflow / IA de código
+
+Convertirlo en brief para un diseñador
+
+O usarlo yo mismo para una versión final definitiva de la web 🌿✨
