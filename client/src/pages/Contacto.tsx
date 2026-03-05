@@ -32,7 +32,7 @@ export default function Contacto() {
   async function onSubmit(values: z.infer<typeof formSchema>) {
     setIsSubmitting(true);
     try {
-      const response = await fetch("https://formspree.io/f/mojjrlea", {
+      const response = await fetch("https://formspree.io/f/xkovlapw", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -131,8 +131,8 @@ export default function Contacto() {
 
           <div className="mt-16 pt-8 border-t border-muted text-center space-y-2">
              <p className="text-sm text-muted-foreground">También puedes escribirme a:</p>
-             <a href="mailto:happyperiodprogram@gmail.com" className="text-primary hover:underline font-serif text-lg">
-               happyperiodprogram@gmail.com
+             <a href="mailto:hola@gabriellecanal.com" className="text-primary hover:underline font-serif text-lg">
+               hola@gabriellecanal.com
              </a>
           </div>
 

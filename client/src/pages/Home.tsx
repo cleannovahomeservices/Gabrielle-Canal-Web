@@ -64,11 +64,6 @@ export default function Home() {
                   Servicios
                 </Button>
               </Link>
-              <Link href="/mi-musica">
-                <Button variant="ghost" className="h-12 px-6 rounded-none hover:bg-transparent hover:text-primary transition-all text-muted-foreground group">
-                  Mi Música <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </Button>
-              </Link>
             </motion.div>
           </div>
 

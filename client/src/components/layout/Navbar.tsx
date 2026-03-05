@@ -18,10 +18,10 @@ export function Navbar() {
   }, []);
 
   const links = [
-    { href: "/como-te-acompano", label: "Cómo te acompaño" },
     { href: "/servicios", label: "Servicios" },
+    { href: "/mi-recorrido", label: "Bio" },
     { href: "/mi-musica", label: "Mi Música" },
-    { href: "/mi-recorrido", label: "Mi Recorrido" },
+    { href: "/testimonios", label: "Testimonios" },
     { href: "/contacto", label: "Contacto" },
   ];
 

@@ -14,6 +14,7 @@ export function Footer() {
         <div className="flex gap-6 text-sm text-muted-foreground">
           <a href="https://www.instagram.com/gabriela.canal.1" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">Instagram</a>
           <a href="mailto:happyperiodprogram@gmail.com" className="hover:text-primary transition-colors">Email</a>
+          <a href="https://www.youtube.com/watch?app=desktop&v=snjbxYJC7Qg" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">YouTube</a>
         </div>
         
         <div className="text-[10px] text-muted-foreground/60">

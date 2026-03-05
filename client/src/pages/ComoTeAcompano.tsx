@@ -1,5 +1,6 @@
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 export default function ComoTeAcompano() {
   const container = {
@@ -36,24 +37,6 @@ export default function ComoTeAcompano() {
             </p>
           </motion.div>
 
-          {/* Intro Block */}
-          <motion.div variants={item} className="prose prose-lg md:prose-xl prose-stone mx-auto font-light leading-relaxed mb-24">
-            <p className="first-letter:text-5xl first-letter:font-serif first-letter:text-primary first-letter:float-left first-letter:mr-3">
-              Sostengo espacios para que descubras, practiques y desarrolles tus propias capacidades a través de las herramientas que me han funcionado para conocerme mejor y cultivar mi salud.
-            </p>
-            <p>
-              Son tecnologías ancestrales que he practicado y no sólo me han funcionado sino que veo una y otra vez cómo facilitan y nutren la salud de muchas personas que participan en mis clases y retiros.
-            </p>
-          </motion.div>
-
-          {/* Quote Block */}
-          <motion.blockquote 
-            variants={item}
-            className="border-l-2 border-primary pl-8 my-20 py-4 md:ml-[-2rem] italic text-2xl md:text-3xl font-serif text-primary/80 leading-normal"
-          >
-            "No hay recetas universales, sino procesos vivos, respetuosos y encarnados."
-          </motion.blockquote>
-
           {/* Image Break */}
           <motion.div variants={item} className="my-24 aspect-[16/9] overflow-hidden rounded-sm relative group">
              <img 
@@ -86,17 +69,23 @@ export default function ComoTeAcompano() {
           </motion.div>
 
           {/* Accordions / Features */}
-          <motion.div variants={item} className="mt-32 space-y-12">
-            {[
-              { title: "Presencia", text: "Estar presente en el aquí y ahora, habitando el cuerpo." },
-              { title: "Escucha", text: "Escuchar lo que el cuerpo y la voz tienen para decirnos." },
-              { title: "Coherencia", text: "Alinear lo que sentimos, pensamos, decimos y hacemos." }
-            ].map((feature, idx) => (
-              <div key={idx} className="border-t border-muted py-8">
-                <h3 className="text-2xl font-serif text-primary mb-2">{feature.title}</h3>
-                <p className="text-muted-foreground font-light">{feature.text}</p>
-              </div>
-            ))}
+          <motion.div variants={item} className="mt-32">
+            <Accordion type="single" collapsible className="w-full border-t border-muted">
+              {[
+                { title: "Presencia", text: "Estar presente en el aquí y ahora, habitando el cuerpo." },
+                { title: "Escucha", text: "Escuchar lo que el cuerpo y la voz tienen para decirnos." },
+                { title: "Coherencia", text: "Alinear lo que sentimos, pensamos, decimos y hacemos." }
+              ].map((feature, idx) => (
+                <AccordionItem key={idx} value={feature.title.toLowerCase()}>
+                  <AccordionTrigger className="font-serif text-2xl text-primary hover:no-underline py-6">
+                    {feature.title}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground font-light text-base pb-6">
+                    {feature.text}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
           </motion.div>
 
         </motion.div>

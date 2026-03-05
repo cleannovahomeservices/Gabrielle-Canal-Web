@@ -12,8 +12,9 @@ import MiMusica from "@/pages/MiMusica";
 import MiRecorrido from "@/pages/MiRecorrido";
 import Contacto from "@/pages/Contacto";
 import KundaliniYoga from "@/pages/services/KundaliniYoga";
-import VozTerapeutica from "@/pages/services/VozTerapeutica";
 import Retiros from "@/pages/services/Retiros";
+import VozTerapeutica from "@/pages/services/VozTerapeutica";
+import Testimonios from "@/pages/Testimonios";
 import NotFound from "@/pages/not-found";
 
 // Component to handle scroll to top on route change
@@ -36,10 +37,11 @@ function Router() {
         <Route path="/como-te-acompano" component={ComoTeAcompano} />
         <Route path="/servicios" component={Servicios} />
         <Route path="/servicios/kundalini-yoga" component={KundaliniYoga} />
-        <Route path="/servicios/voz-terapeutica" component={VozTerapeutica} />
         <Route path="/servicios/retiros" component={Retiros} />
+        <Route path="/servicios/voz-terapeutica" component={VozTerapeutica} />
         <Route path="/mi-musica" component={MiMusica} />
         <Route path="/mi-recorrido" component={MiRecorrido} />
+        <Route path="/testimonios" component={Testimonios} />
         <Route path="/contacto" component={Contacto} />
         {/* Fallback to 404 */}
         <Route component={NotFound} />
