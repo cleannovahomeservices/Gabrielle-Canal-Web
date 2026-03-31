@@ -14,6 +14,7 @@ import Contacto from "@/pages/Contacto";
 import KundaliniYoga from "@/pages/services/KundaliniYoga";
 import Retiros from "@/pages/services/Retiros";
 import VozTerapeutica from "@/pages/services/VozTerapeutica";
+import CoachingIndividual from "@/pages/services/CoachingIndividual";
 import Testimonios from "@/pages/Testimonios";
 import NotFound from "@/pages/not-found";
 
@@ -39,6 +40,7 @@ function Router() {
         <Route path="/servicios/kundalini-yoga" component={KundaliniYoga} />
         <Route path="/servicios/retiros" component={Retiros} />
         <Route path="/servicios/voz-terapeutica" component={VozTerapeutica} />
+        <Route path="/servicios/coaching-individual" component={CoachingIndividual} />
         <Route path="/mi-musica" component={MiMusica} />
         <Route path="/mi-recorrido" component={MiRecorrido} />
         <Route path="/testimonios" component={Testimonios} />

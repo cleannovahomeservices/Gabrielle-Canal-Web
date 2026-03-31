@@ -66,6 +66,16 @@ const services = [
     link: "/servicios/retiros",
     external: false,
   },
+  {
+    id: "coaching-individual",
+    title: "Coaching individual para mujeres",
+    subtitle: "Acompañamiento 1:1 para mirar y transformar tu momento vital",
+    coverSrc: "/images/coaching_individual_mujeres.png",
+    coverPosition: "center",
+    carouselPhotos: null,
+    link: "/servicios/coaching-individual",
+    external: false,
+  },
 ];
 
 export default function Servicios() {
