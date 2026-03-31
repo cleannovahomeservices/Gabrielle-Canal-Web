@@ -19,11 +19,6 @@ export function FilmstripCarousel({ photos }: { photos: FilmPhoto[] }) {
     }
     return out;
   }, [photos]);
-  const loopPhotos = useMemo(() => {
-    // Duplicate once to create an infinite loop without visual repetition glitches.
-    // We always keep scrollLeft within the first "lap" range.
-    return [...uniquePhotos, ...uniquePhotos];
-  }, [uniquePhotos]);
 
   useEffect(() => {
     const container = containerRef.current;
@@ -64,11 +59,10 @@ export function FilmstripCarousel({ photos }: { photos: FilmPhoto[] }) {
 
       currentIndex.current += 1;
 
-      // When we reach the end of the first lap, jump back seamlessly (no animation)
-      // and continue smoothly. This creates a true infinite loop effect.
       if (currentIndex.current >= uniquePhotos.length) {
         currentIndex.current = 0;
-        container.scrollTo({ left: 0, behavior: "auto" });
+        container.scrollTo({ left: 0, behavior: "smooth" });
+        return;
       }
 
       // Always scroll one item at a time.
@@ -89,7 +83,7 @@ export function FilmstripCarousel({ photos }: { photos: FilmPhoto[] }) {
       onWheel={(e) => e.preventDefault()}
       onTouchMove={(e) => e.preventDefault()}
     >
-      {loopPhotos.map((photo, i) => (
+      {uniquePhotos.map((photo, i) => (
         <div
           key={i}
           className="flex-shrink-0 w-[240px] md:w-[280px] h-[180px] md:h-[220px] rounded-2xl overflow-hidden"
