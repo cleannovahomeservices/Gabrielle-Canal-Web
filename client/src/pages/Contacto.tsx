@@ -32,10 +32,11 @@ export default function Contacto() {
   async function onSubmit(values: z.infer<typeof formSchema>) {
     setIsSubmitting(true);
     try {
-      const response = await fetch("https://formspree.io/f/xkovlapw", {
+      const response = await fetch("https://formspree.io/f/mykvrbng", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
+          "Accept": "application/json",
         },
         body: JSON.stringify(values),
       });
