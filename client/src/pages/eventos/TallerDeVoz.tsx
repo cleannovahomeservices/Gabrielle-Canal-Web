@@ -16,7 +16,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
-import { CalendarDays, MapPin } from "lucide-react";
+import { CalendarDays, MapPin, Ticket } from "lucide-react";
 import { events } from "@/data/events";
 
 const event = events.find((e) => e.slug === "talleres-de-voz")!;
@@ -161,6 +161,13 @@ export default function TallerDeVoz() {
                 <div>
                   <p className="text-xs uppercase tracking-widest text-primary mb-1">Plazas</p>
                   <p className="text-muted-foreground font-light">Grupo reducido · reserva con antelación</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <Ticket className="w-5 h-5 text-primary mt-1" strokeWidth={1.5} />
+                <div>
+                  <p className="text-xs uppercase tracking-widest text-primary mb-1">Inversión</p>
+                  <p className="text-muted-foreground font-light">Un taller 55€ · Los dos talleres 100€</p>
                 </div>
               </div>
             </div>
