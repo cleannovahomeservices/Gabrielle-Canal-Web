@@ -19,6 +19,7 @@ export function Navbar() {
 
   const links = [
     { href: "/servicios", label: "Servicios" },
+    { href: "/eventos", label: "Eventos" },
     { href: "/mi-recorrido", label: "Bio" },
     { href: "/mi-musica", label: "Mi Música" },
     { href: "/testimonios", label: "Testimonios" },

@@ -11,6 +11,8 @@ import Servicios from "@/pages/Servicios";
 import MiMusica from "@/pages/MiMusica";
 import MiRecorrido from "@/pages/MiRecorrido";
 import Contacto from "@/pages/Contacto";
+import Eventos from "@/pages/Eventos";
+import TallerDeVoz from "@/pages/eventos/TallerDeVoz";
 import KundaliniYoga from "@/pages/services/KundaliniYoga";
 import Retiros from "@/pages/services/Retiros";
 import VozTerapeutica from "@/pages/services/VozTerapeutica";
@@ -41,6 +43,8 @@ function Router() {
         <Route path="/servicios/retiros" component={Retiros} />
         <Route path="/servicios/voz-terapeutica" component={VozTerapeutica} />
         <Route path="/servicios/coaching-individual" component={CoachingIndividual} />
+        <Route path="/eventos" component={Eventos} />
+        <Route path="/eventos/talleres-de-voz" component={TallerDeVoz} />
         <Route path="/mi-musica" component={MiMusica} />
         <Route path="/mi-recorrido" component={MiRecorrido} />
         <Route path="/testimonios" component={Testimonios} />
